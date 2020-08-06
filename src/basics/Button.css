@@ -1,0 +1,27 @@
+.Button:nth-child(1) {
+  grid-column: span 3;
+}
+.Button:nth-child(15) {
+  grid-column: span 2;
+}
+.Button {
+  font-size: 1.4em;
+  background-color: #f0f0f0;
+  border: none;
+  border-right: solid 1px #888;
+  border-bottom: solid 1px #888;
+  outline: none;
+}
+.Button:active {
+  background: #ccc;
+}
+.Button.special {
+  background: #fa8231;
+}
+
+.Button-area {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 300px;
+}
